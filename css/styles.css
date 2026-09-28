@@ -115,6 +115,13 @@ main > .shell { display: grid; gap: 36px; }
 section h2 { font-size: 1.5rem; margin-bottom: 14px; }
 section p + p { margin-top: 12px; }
 
+.section-intro { max-width: 65ch; margin-bottom: 20px; }
+.subhead {
+  margin: 4px 0 12px; color: var(--octc-blue);
+  font-size: 0.85rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.trail-item p + p { margin-top: 8px; }
+
 /* AI use label panel */
 .label-panel {
   background: var(--octc-blue-soft);
