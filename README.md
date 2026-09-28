@@ -52,7 +52,7 @@ Planned pages: AI use labels, Before You Ask AI, Before You Turn In Your Work, K
 
 - **Brand colors.** Colors and the font match the faculty playbook: OCTC blue `#00467f`, dark blue `#00345f`, navy `#011d41`, gold `#e7a614`, and the Aptos font stack. Gold is used only on navy or as a line or border, never as text on white, for contrast.
 - **Upload files together.** When a page and `styles.css` change at the same time, upload both.
-- **Version tag.** Pages load `css/styles.css?v=2`. After changing the stylesheet, raise the number on every page so browsers load the new version.
+- **Version tag.** Pages load `css/styles.css?v=3`. After changing the stylesheet, raise the number on every page so browsers load the new version.
 - **Home page links open in a new tab.** The home page is often shown inside Blackboard, so its links open a new tab to keep students from getting lost in the frame. Pages on the site itself open in the same tab.
 - **Plain language.** Write for about a 6th–8th grade reading level. Name the thing instead of using "it" or "this." Avoid "X, not Y" contrasts and filler words like "crucial" and "leverage."
 - **Accessibility.** Keep the viewport tag, the skip link, and the `visually-hidden` notes on links that open a new tab. Meaning never depends on color alone.

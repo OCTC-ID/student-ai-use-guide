@@ -99,7 +99,7 @@ button:focus-visible { outline: 3px solid var(--octc-gold); outline-offset: 3px;
 .band .eyebrow { color: var(--octc-gold); }
 .intro-band h1 { color: #fff; font-size: clamp(2rem, 6vw, 2.8rem); letter-spacing: -0.02em; }
 .gold-rule { width: 120px; height: 5px; margin: 16px 0 14px; border-radius: 5px; background: var(--octc-gold); }
-.intro-band p { color: rgba(255, 255, 255, 0.92); font-size: 1.1rem; max-width: 60ch; }
+.intro-band p { color: rgba(255, 255, 255, 0.92); font-size: 1.1rem; }
 
 footer.band { padding-block: 22px; font-size: 0.95rem; }
 footer.band .shell { display: grid; gap: 6px; }
@@ -115,7 +115,7 @@ main > .shell { display: grid; gap: 36px; }
 section h2 { font-size: 1.5rem; margin-bottom: 14px; }
 section p + p { margin-top: 12px; }
 
-.section-intro { max-width: 65ch; margin-bottom: 20px; }
+.section-intro { margin-bottom: 20px; }
 .subhead {
   margin: 4px 0 12px; color: var(--octc-blue);
   font-size: 0.85rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
@@ -179,7 +179,7 @@ section p + p { margin-top: 12px; }
 .page-head .q-when { font-size: 0.85rem; }
 .page-head h1 { font-size: clamp(1.9rem, 5.5vw, 2.6rem); letter-spacing: -0.02em; }
 .page-head .gold-rule { margin: 4px 0 2px; }
-.lede { font-size: 1.15rem; color: var(--muted); max-width: 60ch; }
+.lede { font-size: 1.15rem; color: var(--muted); }
 
 ul.plain { margin: 12px 0 0; padding-left: 22px; display: grid; gap: 6px; }
 ul.plain li::marker { color: var(--octc-blue); }
@@ -222,6 +222,7 @@ ul.plain li::marker { color: var(--octc-blue); }
 
 @media (min-width: 700px) {
   .q-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .q-grid .q-when { min-height: 3.2em; }
   .check-grid, .example-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
