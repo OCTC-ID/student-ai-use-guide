@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Using AI in Your Coursework</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1C2330;
+    --muted: #4B5563;
+    --accent: #1F3A5F;
+    --line: #D8D6CE;
+    --paper: #FFFFFF;
+    --wash: #F4F3EE;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 20px 32px; }
+  h1, h2 { font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; line-height: 1.2; margin: 0; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 22px; margin-bottom: 12px; }
+  p { margin: 0; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover, a:focus { color: #142842; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  .intro { margin-top: 8px; color: var(--muted); }
+  section { margin-top: 28px; }
+
+  .label {
+    background: var(--wash);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .label h2 { font-size: 19px; margin-bottom: 8px; }
+  .label ul { list-style: none; margin: 10px 0 10px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .label li { border: 1.5px solid var(--ink); border-radius: 999px; padding: 4px 12px; font-size: 15px; font-weight: 700; background: var(--paper); }
+  .label p { font-size: 15px; color: var(--muted); }
+
+  ol.qs { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  ol.qs li { border-top: 3px solid var(--accent); padding-top: 12px; }
+  .when { display: block; font-size: 13px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+  .q { display: block; font-size: 19px; font-weight: 700; }
+  .more { display: inline-block; margin-top: 4px; font-size: 15px; }
+
+  ul.trail { margin: 0; padding-left: 22px; display: grid; gap: 10px; }
+  ul.trail li::marker { color: var(--accent); }
+  .why { margin-top: 12px; font-size: 15px; color: var(--muted); }
+
+  footer { margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); display: grid; gap: 6px; }
+
+  @media (min-width: 640px) {
+    ol.qs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Using AI in Your Coursework</h1>
+  <p class="intro">Your instructor's AI Course Policy has the rules for this course. Use this page each time you use AI for your coursework.</p>
+
+  <section class="label" aria-labelledby="label-heading">
+    <h2 id="label-heading">First, check the AI use label</h2>
+    <p style="color: var(--ink); font-size: 16px;">Each assignment has one of three AI use labels:</p>
+    <ul>
+      <li>No AI</li>
+      <li>AI-supported</li>
+      <li>AI-integrated</li>
+    </ul>
+    <p>You can find the label in the assignment directions. If you are not sure, check the AI Course Policy or ask your instructor.</p>
+  </section>
+
+  <section aria-labelledby="qs-heading">
+    <h2 id="qs-heading">The 3 Qs</h2>
+    <ol class="qs">
+      <li>
+        <span class="when">Before you ask</span>
+        <span class="q">Should I use AI for this part of my assignment?</span>
+        <a class="more" href="before-you-ask.html" target="_blank" rel="noopener">More on this<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </li>
+      <li>
+        <span class="when">Before you use it</span>
+        <span class="q">How would I know if AI's answer is wrong?</span>
+        <a class="more" href="before-you-use-it.html" target="_blank" rel="noopener">More on this<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </li>
+      <li>
+        <span class="when">Before you hand it in</span>
+        <span class="q">Can I explain my work and how AI helped me?</span>
+        <a class="more" href="before-you-hand-it-in.html" target="_blank" rel="noopener">More on this<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="trail-heading">
+    <h2 id="trail-heading">Keep a trail</h2>
+    <ul class="trail">
+      <li><strong>Write in Word, saved to OneDrive.</strong> Word saves a dated history of your draft while you write. Type your work in the document. Don't write it somewhere else and paste it in at the end.</li>
+      <li><strong>Keep a OneNote notebook for this course.</strong> Make one section for each assignment. Save your notes, sources, and ideas there while you work.</li>
+      <li><strong>Write down how you use AI.</strong> When you use Copilot or another AI tool, copy your question into OneNote. Add a note about what you kept, changed, or left out.</li>
+    </ul>
+    <p class="why">Your trail shows how your work grew over time. It also helps you tell your instructor how AI helped you. <a href="keep-a-trail.html" target="_blank" rel="noopener">How to set it up<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+  </section>
+
+  <footer>
+    <p><strong>Never paste into AI:</strong> other people's personal information, passwords, or anything private.</p>
+    <p>When AI is optional, choosing not to use it is a good choice too.</p>
+  </footer>
+</main>
+<style>
+  .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+</style>
+</body>
+</html>

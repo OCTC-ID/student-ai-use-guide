@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before You Use It · The 3 Qs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1C2330;
+    --muted: #4B5563;
+    --accent: #1F3A5F;
+    --accent-dark: #142842;
+    --line: #D8D6CE;
+    --paper: #FFFFFF;
+    --wash: #F4F3EE;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; line-height: 1.2; margin: 0; }
+  p { margin: 0; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { color: var(--accent-dark); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: 16px; top: 12px; background: var(--paper); padding: 8px 12px; z-index: 10; }
+
+  /* Site navigation: the three moments are always visible */
+  header.site { border-bottom: 1px solid var(--line); background: var(--wash); }
+  header.site nav { max-width: 760px; margin: 0 auto; padding: 10px 20px; }
+  header.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 6px; }
+  header.site a {
+    display: inline-block;
+    padding: 8px 12px;
+    min-height: 44px;
+    line-height: 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  header.site a:hover { background: #E8E6DE; }
+  header.site a[aria-current="page"] { background: var(--accent); color: #FFFFFF; }
+  header.site .home { font-weight: 400; color: var(--muted); }
+
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 40px; }
+
+  /* Page shape: moment, question, why, what to do, example */
+  .moment { font-size: 13px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: 34px; margin-top: 6px; }
+  .lede { margin-top: 12px; font-size: 19px; color: var(--muted); }
+
+  section { margin-top: 36px; }
+  h2 { font-size: 24px; margin-bottom: 12px; }
+  section p + p { margin-top: 12px; }
+
+  ul.plain { margin: 12px 0 0; padding-left: 22px; display: grid; gap: 8px; }
+  ul.plain li::marker { color: var(--accent); }
+
+  ol.moves { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; counter-reset: move; }
+  ol.moves li {
+    counter-increment: move;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px 16px 60px;
+    position: relative;
+  }
+  ol.moves li::before {
+    content: counter(move);
+    position: absolute; left: 18px; top: 16px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent); color: #FFFFFF;
+    font-weight: 700; font-size: 15px; line-height: 28px; text-align: center;
+  }
+  ol.moves h3 { font-family: inherit; font-size: 18px; margin-bottom: 4px; }
+  .note { margin-top: 6px; font-size: 15px; color: var(--muted); }
+
+  .callout {
+    background: var(--wash);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+
+  .examples { display: grid; gap: 16px; }
+  .example { border-top: 3px solid var(--accent); padding-top: 12px; }
+  .example h3 { font-family: inherit; font-size: 17px; margin-bottom: 6px; }
+
+  .next {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
+    margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
+  }
+  .next a { font-weight: 700; }
+
+  footer.site { max-width: 760px; margin: 0 auto; padding: 0 20px 32px; font-size: 14px; color: var(--muted); display: grid; gap: 6px; }
+
+  @media (min-width: 640px) {
+    .examples { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site">
+  <nav aria-label="The 3 Qs">
+    <ul>
+      <li><a class="home" href="index.html">Home</a></li>
+      <li><a href="before-you-ask.html">Before you ask</a></li>
+      <li><a href="before-you-use-it.html" aria-current="page">Before you use it</a></li>
+      <li><a href="before-you-hand-it-in.html">Before you hand it in</a></li>
+      <li><a href="keep-a-trail.html">Keep a trail</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+  <p class="moment">Before you use it</p>
+  <h1>How would I know if AI's answer is wrong?</h1>
+  <p class="lede">Check AI's answer before you copy it, study from it, or use it in your work.</p>
+
+  <section aria-labelledby="why">
+    <h2 id="why">Why it matters</h2>
+    <p>AI chat tools write by guessing which words usually come next. They do not look up facts the way your textbook or a library database does. So an answer can sound sure of itself and still be wrong.</p>
+    <p>AI can:</p>
+    <ul class="plain">
+      <li>Make up facts, sources, or quotes that look real.</li>
+      <li>Give information that is out of date.</li>
+      <li>Be right in general but wrong for your course, your field, or your assignment.</li>
+      <li>Answer a different question than the one you asked.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="do">
+    <h2 id="do">How to check AI's answer</h2>
+    <ol class="moves">
+      <li>
+        <h3>Look it up somewhere else</h3>
+        <p>Find the main facts in your textbook, your course materials, or another source you trust. If AI gave you a source, open it. Make sure the source says what AI says it does.</p>
+      </li>
+      <li>
+        <h3>Compare it to the assignment</h3>
+        <p>Read the assignment directions again. Does AI's answer do what your instructor asked?</p>
+      </li>
+      <li>
+        <h3>Explain it in your own words</h3>
+        <p>If you can't explain AI's answer, you can't tell yet if it is right.</p>
+      </li>
+      <li>
+        <h3>Ask AI what it is unsure about</h3>
+        <p>AI's reply can show you where to look more closely.</p>
+        <p class="note">This does not prove anything. AI can be wrong about this too. Always use at least one of the other checks as well.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="cant">
+    <h2 id="cant">If you can't check part of AI's answer</h2>
+    <div class="callout">
+      <p>You can leave that part out. You can say in your work that you could not confirm it. Or you can ask your instructor, a tutor, or a librarian for help.</p>
+      <p style="margin-top: 12px;"><strong>In clinical, lab, and shop settings,</strong> always check anything about procedures or safety against your program's materials and with your instructor.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="examples">
+    <h2 id="examples">Examples</h2>
+    <div class="examples">
+      <div class="example">
+        <h3>A source that didn't exist</h3>
+        <p>A student asks AI for articles to use in a paper. AI gives her three. She searches for them in the library database. One is real. The other two do not exist. She keeps the real one and asks a librarian to help her find two more.</p>
+      </div>
+      <div class="example">
+        <h3>Settings for the shop</h3>
+        <p>A student asks AI what machine settings to use for a lab project. Before he tries them, he compares AI's answer to the equipment chart and his program's procedure sheet. They do not match. He follows the procedure sheet and asks his instructor about the difference.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="next" aria-label="Moments">
+    <a href="before-you-ask.html">&larr; Before you ask</a>
+    <a href="before-you-hand-it-in.html">Next: Before you hand it in &rarr;</a>
+  </nav>
+</main>
+
+<footer class="site">
+  <p>Your instructor's AI Course Policy has the rules for each course.</p>
+  <p><a href="for-faculty.html">For faculty</a></p>
+</footer>
+</body>
+</html>
