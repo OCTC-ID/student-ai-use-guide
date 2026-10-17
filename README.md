@@ -18,7 +18,7 @@ Before the 3 Qs, students check the assignment's **AI use label**: No AI, AI-sup
 
 The guide never makes the rules. Every page sends students to their instructor's **AI Course Policy** and the assignment directions. The rules stay with each instructor.
 
-The guide is the student-facing companion to the [AI Literacy Faculty Playbook and BE the Change Workbook](https://github.com/OCTC-ID/AI-literacy-guidebook-4264). The 3 Qs line up with the BE behaviors underneath, but students don't need to learn the framework to use them.
+The guide is the student-facing companion to the [AI Literacy Faculty Playbook and BE the Change Workbook](https://octc-id.github.io/AI-literacy-playbook/). The 3 Qs line up with the BE behaviors underneath, but students don't need to learn the framework to use them.
 
 ## How faculty use it
 
@@ -41,18 +41,24 @@ The guide uses these terms word for word. Please don't reword them in pages you 
 
 ```
 index.html                  Home / Start Here page (the 3 Qs, AI use label, keep a trail)
-before-you-use-it.html      Before You Use AI's Answer
+before-you-ask.html         Before You Ask AI (the AI use labels, a sample label, asking your instructor)
+before-you-use-it.html      Before You Use AI's Answer (the four checks)
+before-you-turn-it-in.html  Before You Turn In Your Work (explaining your work, the AI use note)
+keep-a-trail.html           Keep a Trail (Word and OneDrive, OneNote, a sample notebook page)
+for-faculty.html            For Faculty (adding the guide to Blackboard, shared terms, faculty tools)
 css/styles.css              Shared styles for every page
 README.md                   This file
 ```
 
-Planned pages: AI use labels, Before You Ask AI, Before You Turn In Your Work, Keep a Trail, For Faculty, What You're Working With, and Study With It. Links to planned pages won't work until those pages are added.
+Possible later pages: What You're Working With, and Study With It.
+
+**Keep these filenames and section ids.** The FYE 100 Pathfinder Guidebook links to this guide (Lesson 1.4 links to `index.html`, and later lessons may link to `before-you-use-it.html` and `keep-a-trail.html`). Renaming a page breaks those links and any links faculty put in Blackboard.
 
 ## Notes for editing
 
 - **Brand colors.** Colors and the font match the faculty playbook: OCTC blue `#00467f`, dark blue `#00345f`, navy `#011d41`, gold `#e7a614`, and the Aptos font stack. Gold is used only on navy or as a line or border, never as text on white, for contrast.
 - **Upload files together.** When a page and `styles.css` change at the same time, upload both.
-- **Version tag.** Pages load `css/styles.css?v=3`. After changing the stylesheet, raise the number on every page so browsers load the new version.
+- **Version tag.** Pages load `css/styles.css?v=4`. After changing the stylesheet, raise the number on every page so browsers load the new version.
 - **Home page links open in a new tab.** The home page is often shown inside Blackboard, so its links open a new tab to keep students from getting lost in the frame. Pages on the site itself open in the same tab.
 - **Plain language.** Write for about a 6th–8th grade reading level. Name the thing instead of using "it" or "this." Avoid "X, not Y" contrasts and filler words like "crucial" and "leverage."
 - **Accessibility.** Keep the viewport tag, the skip link, and the `visually-hidden` notes on links that open a new tab. Meaning never depends on color alone.
