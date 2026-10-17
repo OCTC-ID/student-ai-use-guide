@@ -229,3 +229,60 @@ ul.plain li::marker { color: var(--octc-blue); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* ---------- Added with the remaining pages ---------- */
+
+/* A sample AI use label, drawn the way the playbook's AI Label Maker draws one */
+.sample-label {
+  display: inline-block; max-width: 560px;
+  padding: 12px 18px; background: #fff;
+  border: 1px solid var(--border); border-left: 5px solid var(--octc-gold); border-radius: 8px;
+}
+.sample-label .sl-name { color: var(--octc-blue-dark); font-weight: 800; }
+.sample-label .sl-dots { letter-spacing: 2px; margin-right: 6px; }
+.sample-label .sl-dots .on { color: var(--octc-gold); }
+.sample-label .sl-dots .off { color: var(--octc-blue); }
+.sample-label .sl-policy { margin-top: 6px; color: var(--muted); font-size: 0.92rem; }
+.figure-caption { margin-top: 8px; color: var(--muted); font-size: 0.92rem; }
+
+/* The three labels, in words */
+.label-list { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 12px; }
+.label-list li {
+  background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 14px 18px;
+  display: grid; gap: 4px;
+}
+.label-list .ll-name { color: var(--octc-blue-dark); font-weight: 800; }
+
+/* A sample sentence or question students can borrow */
+.sample-says {
+  margin: 12px 0 0; padding: 14px 18px; background: #fff;
+  border: 1px solid var(--border); border-left: 4px solid var(--octc-blue); border-radius: 10px;
+  font-style: italic;
+}
+.sample-says + .sample-says { margin-top: 10px; }
+
+/* Numbered setup steps */
+ol.steps { margin: 12px 0 0; padding-left: 24px; display: grid; gap: 8px; }
+ol.steps li::marker { color: var(--octc-blue); font-weight: 800; }
+
+/* A sample OneNote page */
+.notebook {
+  background: #fff; border: 1px solid var(--border); border-top: 6px solid var(--octc-blue-dark);
+  border-radius: 10px; padding: 18px 20px; display: grid; gap: 10px;
+  box-shadow: 0 8px 20px rgba(0, 52, 95, 0.08);
+}
+.notebook .nb-path { color: var(--muted); font-size: 0.85rem; font-weight: 700; }
+.notebook .nb-title { color: var(--octc-blue-dark); font-size: 1.2rem; font-weight: 800; }
+.notebook .nb-date { color: var(--muted); font-size: 0.85rem; }
+.notebook dl { margin: 0; display: grid; gap: 8px; }
+.notebook dt { color: var(--octc-blue); font-size: 0.8rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.notebook dd { margin: 0; }
+
+/* Faculty page table */
+.term-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; }
+.term-table th, .term-table td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+.term-table th { background: var(--octc-blue-soft); color: var(--octc-blue-dark); font-size: 0.9rem; }
+.term-table td:first-child { font-weight: 800; color: var(--octc-blue-dark); width: 34%; }
+.table-wrap { overflow-x: auto; }
+
+ul.plain + p { margin-top: 12px; }
